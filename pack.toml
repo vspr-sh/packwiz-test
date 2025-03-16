@@ -1,0 +1,13 @@
+name = "test-pack"
+author = "spectrapulse"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "764c8df598e64696d7dc11e81781ebd886bcd443489712314994306708a42900"
+
+[versions]
+fabric = "0.16.10"
+minecraft = "1.21.4"
