@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup packwiz CLI
-        uses: vspr-sh/packwiz-cli-setup-action@master
+        uses: vspr-sh/packwiz-setup-action@master
 
       - name: List mods
         run: packwiz list
