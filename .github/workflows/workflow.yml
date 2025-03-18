@@ -2,6 +2,9 @@ name: list-mods
 
 on: [ push, workflow_dispatch ]
 
+permissions:
+  contents: write
+
 jobs:
   list-mods:
     runs-on: ubuntu-latest
@@ -9,8 +12,7 @@ jobs:
       - name: Checkout code 
         uses: actions/checkout@v4
 
-      - name: Setup packwiz CLI
-        uses: vspr-sh/packwiz-setup-action@master
+      - uses: vspr-sh/packwiz-export-action@master
 
       - name: List mods
         run: packwiz list
