@@ -19,4 +19,5 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          path: ${{ steps.packwiz-export.outputs.file_list }}
+          path: |
+            ${{ steps.packwiz-export.outputs.file_list }}
