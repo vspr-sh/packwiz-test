@@ -1,4 +1,4 @@
-name: list-mods
+name: workflow
 
 on: [ push, workflow_dispatch ]
 
@@ -19,5 +19,4 @@ jobs:
 
       - uses: actions/upload-artifacts@v4
         with:
-          name: workdir
           path: ${{ steps.packwiz-export.outputs.file-list }}
