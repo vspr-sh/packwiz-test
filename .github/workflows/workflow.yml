@@ -6,7 +6,7 @@ permissions:
   contents: write
 
 jobs:
-  list-mods:
+  example:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code 
